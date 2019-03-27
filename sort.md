@@ -1,5 +1,5 @@
-# Data-structcture
-数据结构常用算法
+# S
+经典排序算法
 ====
 
 Index
