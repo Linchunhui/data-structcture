@@ -54,7 +54,7 @@ Index
                     if list[j]>list[i]:                 #如果组里面前面的大就交换
                         list[i],list[j]=list[j],list[i]
         return list
-### 归并排序（递归)
+### 归并排序(递归)
     def merge(self,left,right):
         list=[]
         while len(left) and len(right):
@@ -75,7 +75,7 @@ Index
         left=self.mergeSort(list[:mid])
         right=self.mergeSort(list[mid:])
         return self.merge(left,right)
-### 归并排序（非递归）
+### 归并排序(非递归)
     def merge2(self,list,start,mid,end):
         list1=[]
         left=list[start:mid]
@@ -103,7 +103,7 @@ Index
                 low+=2*i                    #low移动两个步长
             i*=2
         return list
-### 快速排序（递归）
+### 快速排序(递归)
     def quickSort(self,list):               #快排  递归  不稳定  O（nlog2(n)）O（nlog2(n)）
         if len(list)<=1:
             return list
@@ -111,7 +111,7 @@ Index
         left=[i for i in list[1:] if i<first]
         right = [i for i in list[1:] if i >=first]
         return self.quickSort(left)+[first]+self.quickSort(right)
-### 快速排序（非递归）
+### 快速排序(非递归)
     def partition(self,list,start,end):
         num=list[start]                 #保存第一个元素
         while start<end:
